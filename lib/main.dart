@@ -7,8 +7,8 @@ import 'package:provider/provider.dart';
 
 import 'pages/tabs/Tabs.dart';
 
-// import 'provider/Cart.dart';
-// import 'provider/CheckOut.dart';
+import 'provider/Cart.dart';
+import 'provider/CheckOut.dart';
 
 // void main() => runApp(MyApp());
 void main() {
@@ -27,8 +27,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        // ChangeNotifierProvider(builder: (_) => Cart()),
-        // ChangeNotifierProvider(builder: (_) => CheckOut())
+        ChangeNotifierProvider(builder: (_) => Cart()),
+        ChangeNotifierProvider(builder: (_) => CheckOut())
       ],
       child: MaterialApp(
         // home: Tabs(),
